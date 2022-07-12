@@ -1,0 +1,23 @@
+name: Syft SBOM Action
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  buildAndUpload:
+    name: Maven Build
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: Build with Maven
+      run: mvn -B package -DskipTests=true
+    - name: Path Call Out
+      run: ls -la ./webgoat-server/target
+    - uses: anchore/sbom-action@v0
+      with:
+        image: ./target/webgoat-*.jar
+        dependency-snapshot: true
+ 
