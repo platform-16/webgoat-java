@@ -27,8 +27,8 @@ jobs:
          architecture: x64
     - name: Build with Maven
       run: mvn -B package -DskipTests=true
-   - name: Path Call Out
-     run: ls -la . ./target/* 
+    - name: Path Call Out
+      run: ls -la . ./target/* 
     - uses: anchore/sbom-action@v0
       with:
         image: ./target/webgoat-8.2.3-SNAPSHOT.jar
