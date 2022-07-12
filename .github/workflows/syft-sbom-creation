@@ -1,5 +1,5 @@
 name: Syft SBOM Action
-# Test commit
+# Test commit 123
 on:
   push:
     branches: [ develop ]
