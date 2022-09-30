@@ -33,6 +33,7 @@ jobs:
       uses: actions/setup-java@v3
       with:
         java-version: 1.11
+        distribution: temurin
 
     # Use mvn command
     - run: mvn clean install --file pom.xml
