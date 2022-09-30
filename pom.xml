@@ -121,7 +121,7 @@
         <!-- Shared properties with plugins and version numbers across submodules-->
         <asciidoctorj.version>2.5.3</asciidoctorj.version>
         <bootstrap.version>5.2.0</bootstrap.version>
-        <cglib.version>2.2</cglib.version> <!-- do not update necessary for lesson -->
+        <cglib.version>3.3.0</cglib.version> <!-- do not update necessary for lesson -->
         <checkstyle.version>3.2.0</checkstyle.version>
         <commons-collections.version>3.2.1</commons-collections.version>
         <commons-lang3.version>3.12.0</commons-lang3.version>
